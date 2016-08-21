@@ -1,0 +1,48 @@
+/*
+ * Lato font with thin light and regular weights
+ * No bold and no italic
+ */
+@import 'https://fonts.googleapis.com/css?family=Lato:100,300,400';
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+
+/*
+ * Use uls as flex containers to easily keep content aligned
+ * flex-wrap: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
+ * justify-content: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+ */
+ ul {
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+ }
+
+/*
+ * For the purpose of this page let's make all list items boxes
+ * to play around with
+ * vw and rem reference - all css units:
+ * https://developer.mozilla.org/en/docs/Web/CSS/length
+ */
+li {
+  display: inline-block;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 3px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.tree {
+  background-image: url('assets/tree.png');
+  background-size: contain;
+}
